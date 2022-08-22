@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.app {
+  /* width: 100%; */
+  height: 88vh;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  font-family: cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app:before {
+  border-radius: 20px;
+  content: '';
+  background: url('./assets/keywest.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
